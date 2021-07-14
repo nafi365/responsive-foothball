@@ -1,0 +1,320 @@
+
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+/* Heading part  */
+header{
+    background-color: #2D25A0;
+    width: 1440px;
+    height: 677px;
+    margin-bottom: 50px;
+}
+
+
+.main-heading{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-column-gap: 102px;
+    margin-bottom: 70px;
+   
+
+}
+
+.h-title h1{
+    width: 485px;
+height: 230px;
+    font-size: 63px;
+    color: #FFFFFF;
+    font-style: normal;
+font-weight:700;
+font-size: 64px;
+    line-height: 80px;
+    margin-top: 207px;
+    margin-bottom: 27px; 
+    margin-left: 156px;
+   
+    /* margin-right: 102px; */
+    /* */
+    
+    /*  */
+}
+#ancor a {
+    text-decoration: none;
+    color: #FFFFFF;
+background-color: #E02C6D;
+margin-left:156px ;
+border-top: 10px;
+border-bottom: 10px;
+padding-top: 10px;
+padding-bottom: 10px;
+padding-left: 24px;
+padding-right: 24px;
+}
+.fa-arrow-right{
+    color: white;
+}
+.header-pic img{
+    width: 556.01px;
+height: 438px;
+margin-top:153px;
+margin-bottom: 86px;
+margin-right: 140px;
+margin-left: 102px;
+}
+
+.header-pic:hover{
+transform: scale(1);
+}
+
+/* ------------------
+Header style end 
+=------------------- */
+
+
+
+/*-----------------
+ Main style start 
+ ------------------ */
+ .container{
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    margin-bottom: 158px;
+} 
+
+.players{
+
+     display: grid;
+     grid-template-columns: repeat(3,1fr);
+     grid-column-gap: 30px;
+     justify-content: center;
+     /* align-items: center; */
+     /* Width: 330px;
+     Height: 474px;
+     margin-left: 180px; */
+ }
+
+ .player {
+     /* width:300px;
+     height: 400px; */
+     box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+     padding: 10px;
+     font-style: normal;
+     margin-bottom: 50px;
+     border-radius: 5px;
+ }
+ 
+ .player-banner img{
+    width: 300px;
+    height: 256px;
+ }
+
+ .player-details h2{
+ width:300px;
+    font-size: 28px;  
+font-weight: bold;
+line-height: 40px;
+color: #18191F;;
+ }
+ .player-details p{
+    width: 150px;
+     font-weight: 400;
+font-size: 16px;
+width: 300px;
+line-height: 26px;
+ }
+
+ /*----------
+  Main style end 
+  ------------- */
+/* Animation */
+@keyframes slidiing {
+    0% {
+        background-color: yellow;
+        left: 0;
+        top: 0;
+    }
+
+    25% {
+        background-color: red;
+        top: 235px;
+        transform: scale(0.3);
+
+
+    }
+
+    50% {
+        background-color: yellow;
+        top: 0px;
+        transform: scale(1);
+    }
+
+    75% {
+        top: 235px;
+        transform: scale(0.3);
+    }
+    100% {
+        background-color: red;
+        left: 700px;
+        top: 0;
+
+    }
+
+
+
+}
+
+.stage {
+    width: 800px;
+    height: 300px;
+    background-color: lightskyblue;
+}
+
+.ball {
+    width: 100px;
+    height: 100px;
+    background-color: limegreen;
+    border-radius: 50px;
+    animation: slidiing 2s ease-in-out 0.5s infinite alternate;
+    animation-play-state: running;
+    position: relative;
+}
+
+  /* ----------------
+  footer style start 
+  ----------------- */
+.footer-area{
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    margin-left: 10px;
+    
+}
+  .footer-banner img{
+     
+    width: 483.87px;
+    height: 110px;
+    margin-bottom: 20px;
+    
+  }
+  .footer-icon{
+      margin-right: 156px;
+      margin-left: 156px;
+  }
+
+  .fab{
+     
+    color: #969BAB;
+      width: 25px;
+      height: 25px;
+      margin-left: 10px;
+ 
+  }
+  #copyright{
+     font-size: 18px;
+     line-height: 24px;
+     text-align: right;
+     font-weight: 400;
+     padding-left: 10px;
+     
+     
+  }
+
+  /* --------------------
+  Media quari-------
+  ----------------- */
+  /* mobile device */
+  @media only screen and (max-width:688px) {
+     
+    
+    .main-heading{
+       width: 50%;
+      grid-template-rows: repeat(1,200px);
+     
+    overflow: hidden;
+    }
+    .h-title, .header-pic{
+        flex-direction:row;
+    }
+    
+    .player{
+display: grid;
+grid-auto-columns: auto;
+align-items: center;
+width: 100%;
+justify-content: center;
+align-items: center;
+    }
+
+}
+
+
+
+
+/* <!-- style? -->
+<!-- @keyframes slidiing {
+    0% {
+        background-color: yellow;
+        left: 0;
+        top: 0;
+    }
+
+    25% {
+        background-color: red;
+        top: 235px;
+        transform: scale(0.3);
+
+
+    }
+
+    50% {
+        background-color: yellow;
+        top: 0px;
+        transform: scale(1);
+    }
+
+    75% {
+        top: 235px;
+        transform: scale(0.3);
+    }
+    100% {
+        background-color: red;
+        left: 700px;
+        top: 0;
+
+    }
+
+
+
+}
+
+.stage {
+    width: 800px;
+    height: 300px;
+    background-color: lightskyblue;
+}
+
+.ball {
+    width: 100px;
+    height: 100px;
+    background-color: limegreen;
+    border-radius: 50px;
+    animation: slidiing 2s ease-in-out 0.5s infinite alternate;
+    animation-play-state: running;
+    position: relative;
+}
+ -->
+
+ <!-- html  -->
+ <!-- <div class="stage">
+
+    <div class="ball">
+
+    </div>
+
+
+</div> --> */
